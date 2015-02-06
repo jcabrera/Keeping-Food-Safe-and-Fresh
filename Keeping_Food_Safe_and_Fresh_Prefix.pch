@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Keeping Food Safe and Fresh' target in the 'Keeping Food Safe and Fresh' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

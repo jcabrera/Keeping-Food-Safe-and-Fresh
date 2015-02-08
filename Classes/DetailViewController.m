@@ -268,7 +268,7 @@
 	//	[HTMLString appendString:@"</p>"];
 	[HTMLString appendString:@"</body></html>"];
 	
-	[webView loadHTMLString:HTMLString baseURL:[NSURL URLWithString:@""]]; 
+	[self.webView loadHTMLString:HTMLString baseURL:[NSURL URLWithString:@""]];
 	//NSLog(@"done webview ");
 	
 	
@@ -297,11 +297,11 @@ duration:(NSTimeInterval) duration {
 	
 	if (toOrientation == UIInterfaceOrientationPortrait || toOrientation == UIInterfaceOrientationPortraitUpsideDown)
 	{
-		webView.frame = CGRectMake(20,17,280,382);
+		self.webView.frame = CGRectMake(20,17,280,382);
 	}
 	else
 	{
-		webView.frame = CGRectMake(30,11,420,246);
+		self.webView.frame = CGRectMake(30,11,420,246);
 	}
 }
 

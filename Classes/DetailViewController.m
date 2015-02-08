@@ -266,13 +266,10 @@
 	//NSLog(@"done webview ");
 	
 	
-	[HTMLString release];	
 
 	//[details removeAllObjects];
-	[details release];
 
 	//[labels removeAllObjects];
-	[labels release];
 
 	sqlite3_close(db);
 	
@@ -310,14 +307,6 @@ duration:(NSTimeInterval) duration {
 
 
 //Dealloc method declared in DetailViewController.m
-- (void)dealloc {
-
-	[selectedProduce release];	
-	[selectedCategory release];
-	[webView release];
-
-	[super dealloc];
-}
 
 
 @end

@@ -15,6 +15,6 @@
 	NSString *selectedCategory;
 
 }
-@property (nonatomic, retain) NSArray *keys;
-@property (nonatomic, retain) NSString *selectedCategory;
+@property (nonatomic, strong) NSArray *keys;
+@property (nonatomic, strong) NSString *selectedCategory;
 @end

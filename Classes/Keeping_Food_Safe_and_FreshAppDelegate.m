@@ -29,11 +29,6 @@
 }
 
 
-- (void)dealloc {
-	[navigationController release];
-	[window release];
-	[super dealloc];
-}
 
 +(sqlite3 *) getNewDBConnection{
 	sqlite3 *newDBconnection;

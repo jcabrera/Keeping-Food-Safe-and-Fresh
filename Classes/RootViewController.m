@@ -61,7 +61,6 @@
 				[self.keys addObject:[NSString stringWithFormat:@"%c",c]];
 				[self.dictionary setObject:arrayOfNames forKey:[NSString stringWithFormat:@"%c",c]];
 			}
-			[arrayOfNames release];
 		}
 		
 				/*
@@ -139,7 +138,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...	
@@ -174,7 +173,6 @@
 	Level2Controller *dvController = [[Level2Controller alloc] initWithNibName:@"Level2Controller" bundle:[NSBundle mainBundle]];
 	dvController.selectedCategory = selectedCategory;
 	[self.navigationController pushViewController:dvController animated:YES];
-	[dvController release];
 	dvController = nil;
 }
 
@@ -222,11 +220,6 @@
 */
 
 
-- (void)dealloc {
-	[keys release];
-	[dictionary release];
-    [super dealloc];
-}
 
 
 

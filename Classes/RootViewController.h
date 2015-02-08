@@ -14,6 +14,6 @@
 	NSMutableArray *keys;
 	NSMutableDictionary *dictionary;
 }
-@property (nonatomic, retain) NSMutableArray *keys; 
-@property (nonatomic, retain) NSMutableDictionary *dictionary;
+@property (nonatomic, strong) NSMutableArray *keys; 
+@property (nonatomic, strong) NSMutableDictionary *dictionary;
 @end

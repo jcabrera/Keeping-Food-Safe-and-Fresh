@@ -154,7 +154,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...	
@@ -208,7 +208,6 @@
 	dvController.selectedProduce = selectedProduce;
 	dvController.selectedCategory = selectedCategory;
 	[self.navigationController pushViewController:dvController animated:YES];
-	[dvController release];
 	dvController = nil;
 }
 
@@ -256,12 +255,6 @@
  */
 
 
-- (void)dealloc {
-	[listOfItems release];
-	[keys release];
-	[selectedCategory release];
-    [super dealloc];
-}
 
 
 

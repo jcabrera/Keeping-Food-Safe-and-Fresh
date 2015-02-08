@@ -18,8 +18,8 @@
 	
 }
 
-@property (nonatomic, retain) NSString *selectedProduce;
-@property (nonatomic, retain) NSString *selectedCategory;
+@property (nonatomic, strong) NSString *selectedProduce;
+@property (nonatomic, strong) NSString *selectedCategory;
 
 @end
 

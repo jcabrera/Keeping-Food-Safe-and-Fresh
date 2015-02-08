@@ -9,12 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface Level2Controller : UITableViewController {
-	NSMutableArray *listOfItems;
-	NSArray *keys;
-	NSString *selectedCategory;
+@interface Level2Controller : UITableViewController
 
-}
-@property (nonatomic, strong) NSArray *keys;
-@property (nonatomic, strong) NSString *selectedCategory;
+- (void)prepareLevel2ControllerWith:(NSString *)category;
+
 @end

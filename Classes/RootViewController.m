@@ -170,10 +170,12 @@
 	
 	NSString *selectedCategory = [[dictionary objectForKey:[keys objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
 
-	Level2Controller *dvController = [[Level2Controller alloc] initWithNibName:@"Level2Controller" bundle:[NSBundle mainBundle]];
-	dvController.selectedCategory = selectedCategory;
-	[self.navigationController pushViewController:dvController animated:YES];
-	dvController = nil;
+	Level2Controller *level2Controller = [[Level2Controller alloc] initWithNibName:@"Level2Controller" bundle:[NSBundle mainBundle]];
+    
+    [level2Controller prepareLevel2ControllerWith:selectedCategory];
+    
+	[self.navigationController pushViewController:level2Controller animated:YES];
+	level2Controller = nil;
 }
 
 

@@ -10,9 +10,16 @@
 #import "Keeping_Food_Safe_and_FreshAppDelegate.h"
 #import "DetailViewController.h"
 
+@interface Level2Controller ()
+
+@property (nonatomic, strong) NSMutableArray *listOfItems;
+
+@property (nonatomic, strong) NSArray *keys;
+@property (nonatomic, strong) NSString *selectedCategory;
+
+@end
+
 @implementation Level2Controller
-@synthesize keys;
-@synthesize selectedCategory;
 
 - (NSString *) alphaOnly:(NSString *) inputString {
 	//NSLog(@"Original: %@",inputString);
@@ -28,34 +35,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	listOfItems = [[NSMutableArray alloc] init];
+	self.listOfItems = [[NSMutableArray alloc] init];
 	
-/*
-	NSString *catFile;
-	NSString *strippedName;
-	strippedName = [self alphaOnly:selectedCategory];
-	catFile = [[NSBundle mainBundle] pathForResource:strippedName ofType:@"txt"];
-	
-	NSFileManager *fm = [NSFileManager defaultManager];
-	if (![fm fileExistsAtPath:catFile]) {
-		catFile = [[NSBundle mainBundle] pathForResource:@"NotYetImplemented" ofType:@"txt"];
-	}
-	
-	
-	NSString *fileString = [NSString stringWithContentsOfFile:catFile]; // reads file into memory as an NSString
-	NSArray *lines = [fileString componentsSeparatedByString:@"\n"]; // each line, adjust character for line endings	
-	
-	// NSArray *array = [[lines allKeys] sortedArrayUsingSelector:@selector(compare:)];
-	self.keys = lines;
-		
-	for (NSString *string in lines) {
-		[listOfItems addObject:string];
-	}
-	
-	
-*/
 	//Set the title
-	self.navigationItem.title = selectedCategory;
+	self.navigationItem.title = self.selectedCategory;
 	
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -64,7 +47,7 @@
 	sqlite3 *db = [Keeping_Food_Safe_and_FreshAppDelegate getNewDBConnection];
 	
 		NSMutableString *query;
-		query = [NSMutableString stringWithFormat:@"select product from detail where category = '%@",selectedCategory]; 
+		query = [NSMutableString stringWithFormat:@"select product from detail where category = '%@",self.selectedCategory];
 		[query appendString:@"' order by product"];
 		//char *sql = [query cString];
 		sqlite3_stmt *statement = nil;
@@ -75,7 +58,7 @@
 		{
 //			NSMutableArray *arrayOfNames = [[NSMutableArray alloc]init];
 			while(sqlite3_step(statement)==SQLITE_ROW)
-				[listOfItems addObject:[NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]];
+				[self.listOfItems addObject:[NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]];
 /*
 			[arrayOfNames addObject:[NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]];
 			if([arrayOfNames count] >0)
@@ -142,7 +125,7 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // return 0;
-	return [listOfItems count];
+	return (NSInteger)[self.listOfItems count];
 	;
 }
 
@@ -160,7 +143,7 @@
     // Set up the cell...	
 	
 	// custom 2 lines here
-	NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
+	NSString *cellValue = [self.listOfItems objectAtIndex:(NSUInteger)indexPath.row];
 
 //	cell.text = cellValue;
 	[[cell textLabel] setText:cellValue];
@@ -202,11 +185,11 @@
 	// [self.navigationController pushViewController:anotherViewController];
 	// [anotherViewController release];
 	
-	NSString *selectedProduce = [listOfItems objectAtIndex:indexPath.row];
+	NSString *selectedProduce = [self.listOfItems objectAtIndex:(NSUInteger)indexPath.row];
 	
 	DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView1" bundle:[NSBundle mainBundle]];
     
-    [dvController prepareDetailViewControllerProduce:selectedProduce category:selectedCategory];
+    [dvController prepareDetailViewControllerProduce:selectedProduce category:self.selectedCategory];
     
 	[self.navigationController pushViewController:dvController animated:YES];
 	dvController = nil;
@@ -284,7 +267,10 @@
 	return index % 2;
 }
 
+- (void)prepareLevel2ControllerWith:(NSString *)category
+{
+    self.selectedCategory = category;
+}
+
 
 @end
-
-

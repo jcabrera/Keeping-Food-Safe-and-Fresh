@@ -101,13 +101,10 @@
 	// char *sql  = [query cStringUsingEncoding:NSUTF8StringEncoding];
 	sqlite3_stmt *statement = nil;
 	
-	NSString *template;
-	NSMutableArray *details;
-	NSMutableArray *labels;
-	
-	details= [[NSMutableArray alloc]init];
-	labels = [[NSMutableArray alloc]init];
-	
+	NSString *template = nil;
+	NSMutableArray *details = [[NSMutableArray alloc]init];
+	NSMutableArray *labels = [[NSMutableArray alloc]init];
+		
 	
 	//	NSLog(@"query: %@",query);
 	
@@ -138,7 +135,7 @@
 	//	sql = [query cString];
 	statement = nil;
 	
-	int nlabels;
+	int nlabels = 0;
 	// NSLog(@"query: %@",query);
 	
 	if(sqlite3_prepare_v2(db,[query cStringUsingEncoding:NSUTF8StringEncoding], -1, &statement, NULL)!= SQLITE_OK)
@@ -164,9 +161,6 @@
 	
 	
 	NSMutableString *HTMLString = [[NSMutableString alloc] init];
-	NSString *label1;
-	
-	label1 = [labels objectAtIndex:0];
 	
 	[HTMLString appendString:@"<html><head><title>"];
 	[HTMLString appendString:selectedProduce];
@@ -274,12 +268,6 @@
 	
 	[HTMLString release];	
 
-	//[detail release];
-	//[label release];
-	//[label1 release];
-
-	// yikes memory leaks from releasing label1
-	
 	//[details removeAllObjects];
 	[details release];
 
@@ -290,7 +278,6 @@
 	
 	//Set the title of the navigation bar
 	self.navigationItem.title = selectedProduce;
-	
 }
 
 // Override to allow orientations other than the default portrait orientation.

@@ -49,22 +49,15 @@
 	
 	//Using NSFileManager we can perform many file system operations.
 	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSError *error;
-	BOOL success = [fileManager fileExistsAtPath:dbPath];
-	
-	//	if(!success) {
-	//	 always overwrite database file for testing
+	NSError *error = nil;
 	
 	[fileManager removeItemAtPath:dbPath error:&error];
 	
 	NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"FoodSafety.sqlite"];
-	success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
+	BOOL success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
 	
 	if (!success)
 		NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
-	//	}
-	
-	
 	
 	
 	NSLog(@"Database path: %@",dbPath);

@@ -205,8 +205,9 @@
 	NSString *selectedProduce = [listOfItems objectAtIndex:indexPath.row];
 	
 	DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView1" bundle:[NSBundle mainBundle]];
-	dvController.selectedProduce = selectedProduce;
-	dvController.selectedCategory = selectedCategory;
+    
+    [dvController prepareDetailViewControllerProduce:selectedProduce category:selectedCategory];
+    
 	[self.navigationController pushViewController:dvController animated:YES];
 	dvController = nil;
 }

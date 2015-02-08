@@ -117,7 +117,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //    return 1;
-	return [dictionary count];
+	return (NSInteger)[dictionary count];
 }
 
 
@@ -125,12 +125,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // return 0;	
 
-	NSString *key = [keys objectAtIndex:section];
+	NSString *key = [keys objectAtIndex:(NSUInteger)section];
 	NSArray *nameSection = [dictionary objectForKey:key];
 	
-	return [nameSection count];
-	
-	;
+	return (NSInteger)[nameSection count];
 }
 
 

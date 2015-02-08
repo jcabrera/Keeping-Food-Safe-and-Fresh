@@ -16,6 +16,7 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		7C1411461A86DE9F00EC3821 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */; };
+		7C1411481A86E2A200EC3821 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */; };
 		8508BC521129C8D100A89EBC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8508BC511129C8D100A89EBC /* Icon.png */; };
 		851781B2102A2BE2009DE18C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */; };
 		85229DDA10A2254400F7FEA1 /* Apples.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229DC110A2254400F7FEA1 /* Apples.png */; };
@@ -115,6 +116,7 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7C1411471A86E2A200EC3821 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		8508BC511129C8D100A89EBC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		85229DC110A2254400F7FEA1 /* Apples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apples.png; path = png/Apples.png; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7C1411471A86E2A200EC3821 /* Warnings.xcconfig */,
 				7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -474,6 +477,7 @@
 				85229DEB10A2254400F7FEA1 /* Papaya.png in Resources */,
 				85229DEC10A2254400F7FEA1 /* Peaches.png in Resources */,
 				85229DED10A2254400F7FEA1 /* Pears.png in Resources */,
+				7C1411481A86E2A200EC3821 /* Warnings.xcconfig in Resources */,
 				85229DEE10A2254400F7FEA1 /* Pineapples.png in Resources */,
 				85229DEF10A2254400F7FEA1 /* Plums.png in Resources */,
 				85229DF010A2254400F7FEA1 /* Strawberries.png in Resources */,
@@ -547,6 +551,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_STATIC_ANALYZER_MODE = deep;
@@ -605,6 +610,7 @@
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;

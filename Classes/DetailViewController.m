@@ -284,12 +284,12 @@
 }
 
 // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotate:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
 	return YES;
 	
 }
-
+/*
 - (void) willAnimateSecondHalfOfRotationFromInterfaceOrientation:(UIInterfaceOrientation) fromInterfaceOrientation
 duration:(NSTimeInterval) duration {
 
@@ -304,7 +304,7 @@ duration:(NSTimeInterval) duration {
 		self.webView.frame = CGRectMake(30,11,420,246);
 	}
 }
-
+*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview

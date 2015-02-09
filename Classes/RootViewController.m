@@ -100,7 +100,7 @@
 
 
 // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotate:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
 //    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 	return YES;
@@ -138,7 +138,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...	
@@ -147,7 +147,7 @@
 	
 	// Set up the cell
 //	cell.text = [[dictionary objectForKey:[keys objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-	[[cell textLabel] setText:[[dictionary objectForKey:[keys objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row]];
+	[[cell textLabel] setText:[[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row]];
 
 /*	
 	UILabel* label = [[UILabel alloc] initWithFrame:cell.frame];
@@ -168,7 +168,7 @@
 	// [self.navigationController pushViewController:anotherViewController];
 	// [anotherViewController release];
 	
-	NSString *selectedCategory = [[dictionary objectForKey:[keys objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+	NSString *selectedCategory = [[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row];
 
 	Level2Controller *level2Controller = [[Level2Controller alloc] initWithNibName:@"Level2Controller" bundle:[NSBundle mainBundle]];
     
@@ -263,7 +263,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	
-	NSString *key = [keys objectAtIndex:section];
+	NSString *key = [keys objectAtIndex:(NSUInteger)section];
 	return key;
 	
 }

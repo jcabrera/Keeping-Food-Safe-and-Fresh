@@ -19,8 +19,9 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
 	// Configure and show the window
-	[window addSubview:[navigationController view]];
+    [self.window setRootViewController:navigationController];
 	[window makeKeyAndVisible];
+    self.window.frame = [[UIScreen mainScreen] bounds];
 }
 
 

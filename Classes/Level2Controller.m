@@ -267,6 +267,16 @@
 	return index % 2;
 }
 
+-(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.00001;
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 17;
+}
+
 - (void)prepareLevel2ControllerWith:(NSString *)category
 {
     self.selectedCategory = category;

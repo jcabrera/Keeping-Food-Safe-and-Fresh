@@ -17,7 +17,6 @@
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		7C1411461A86DE9F00EC3821 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */; };
 		7C1411481A86E2A200EC3821 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */; };
-		8508BC521129C8D100A89EBC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8508BC511129C8D100A89EBC /* Icon.png */; };
 		851781B2102A2BE2009DE18C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */; };
 		85229DDA10A2254400F7FEA1 /* Apples.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229DC110A2254400F7FEA1 /* Apples.png */; };
 		85229DDB10A2254400F7FEA1 /* Apricots.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229DC210A2254400F7FEA1 /* Apricots.png */; };
@@ -87,7 +86,6 @@
 		853766F2102108FB007C138D /* NotYetImplemented.html in Resources */ = {isa = PBXBuildFile; fileRef = 853766F1102108FB007C138D /* NotYetImplemented.html */; };
 		8537672110210E19007C138D /* Apricots.html in Resources */ = {isa = PBXBuildFile; fileRef = 8537672010210E19007C138D /* Apricots.html */; };
 		8537676010210E70007C138D /* Asparagus.html in Resources */ = {isa = PBXBuildFile; fileRef = 8537675F10210E70007C138D /* Asparagus.html */; };
-		855F31D3102B572D003B6D6F /* FoodSafety.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 855F31D2102B572D003B6D6F /* FoodSafety.sqlite */; };
 		8564E5771027638D0069D9C4 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8564E5761027638D0069D9C4 /* Categories.plist */; };
 		85671F631021EF6700EADED7 /* Level2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 85671F621021EF6700EADED7 /* Level2Controller.m */; };
 		85671F6E1021F17900EADED7 /* Level2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85671F6D1021F17900EADED7 /* Level2Controller.xib */; };
@@ -100,6 +98,11 @@
 		8567B41B1020F15600119B18 /* Apples.html in Resources */ = {isa = PBXBuildFile; fileRef = 8567B41A1020F15600119B18 /* Apples.html */; };
 		85C826DF101F6F57002507DA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C826DE101F6F57002507DA /* DetailViewController.m */; };
 		85CCC5F9101F7B6D0099973D /* DetailView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCC5F8101F7B6D0099973D /* DetailView1.xib */; };
+		D41328DB1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D41328D81AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-57.png */; };
+		D41328DC1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-512.png in Resources */ = {isa = PBXBuildFile; fileRef = D41328D91AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-512.png */; };
+		D41328DD1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png in Resources */ = {isa = PBXBuildFile; fileRef = D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */; };
+		D41328DF1AF169F200EACEEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41328DE1AF169F200EACEEC /* Images.xcassets */; };
+		D4D9AA7A1B02BCEB005E87D8 /* FoodSafety.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +120,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7C1411471A86E2A200EC3821 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
-		8508BC511129C8D100A89EBC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		85229DC110A2254400F7FEA1 /* Apples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apples.png; path = png/Apples.png; sourceTree = "<group>"; };
 		85229DC210A2254400F7FEA1 /* Apricots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apricots.png; path = png/Apricots.png; sourceTree = "<group>"; };
@@ -187,7 +189,6 @@
 		853766F1102108FB007C138D /* NotYetImplemented.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NotYetImplemented.html; sourceTree = "<group>"; };
 		8537672010210E19007C138D /* Apricots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Apricots.html; sourceTree = "<group>"; };
 		8537675F10210E70007C138D /* Asparagus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Asparagus.html; sourceTree = "<group>"; };
-		855F31D2102B572D003B6D6F /* FoodSafety.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FoodSafety.sqlite; sourceTree = "<group>"; };
 		8564E5761027638D0069D9C4 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
 		85671F611021EF6700EADED7 /* Level2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2Controller.h; sourceTree = "<group>"; };
 		85671F621021EF6700EADED7 /* Level2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2Controller.m; sourceTree = "<group>"; };
@@ -203,6 +204,11 @@
 		85C826DE101F6F57002507DA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		85CCC5F8101F7B6D0099973D /* DetailView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView1.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41328D81AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FOOD STORAGE LOGO_V7_042915-57.png"; sourceTree = "<group>"; };
+		D41328D91AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FOOD STORAGE LOGO_V7_042915-512.png"; sourceTree = "<group>"; };
+		D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FOOD STORAGE LOGO_V7_042915-LG-1500.png"; sourceTree = "<group>"; };
+		D41328DE1AF169F200EACEEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Keeping Food Safe and Fresh/Images.xcassets"; sourceTree = "<group>"; };
+		D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FoodSafety.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +275,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8508BC511129C8D100A89EBC /* Icon.png */,
-				855F31D2102B572D003B6D6F /* FoodSafety.sqlite */,
+				D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */,
+				D41328DE1AF169F200EACEEC /* Images.xcassets */,
+				D41328D81AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-57.png */,
+				D41328D91AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-512.png */,
+				D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */,
 				8564E49810273BE40069D9C4 /* html */,
 				8564E49510273BB10069D9C4 /* txt */,
 				8564E48010273B790069D9C4 /* png */,
@@ -459,13 +468,14 @@
 				7C1411461A86DE9F00EC3821 /* Default-568h@2x.png in Resources */,
 				85672099102200A300EADED7 /* Cerealdrymixed.html in Resources */,
 				856720BA1022053B00EADED7 /* Fruits.txt in Resources */,
+				D41328DD1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png in Resources */,
 				856720BE1022057E00EADED7 /* Vegetables.txt in Resources */,
 				8564E5771027638D0069D9C4 /* Categories.plist in Resources */,
-				855F31D3102B572D003B6D6F /* FoodSafety.sqlite in Resources */,
 				85229DDA10A2254400F7FEA1 /* Apples.png in Resources */,
 				85229DDB10A2254400F7FEA1 /* Apricots.png in Resources */,
 				85229DDD10A2254400F7FEA1 /* Bananas.png in Resources */,
 				85229DDF10A2254400F7FEA1 /* Cantaloupe.png in Resources */,
+				D41328DC1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-512.png in Resources */,
 				85229DE010A2254400F7FEA1 /* Cherries.png in Resources */,
 				85229DE310A2254400F7FEA1 /* Grapes.png in Resources */,
 				85229DE510A2254400F7FEA1 /* Kiwi.png in Resources */,
@@ -483,6 +493,7 @@
 				85229DF010A2254400F7FEA1 /* Strawberries.png in Resources */,
 				85229DF110A2254400F7FEA1 /* Tangerines.png in Resources */,
 				85229DF210A2254400F7FEA1 /* Watermelon.png in Resources */,
+				D4D9AA7A1B02BCEB005E87D8 /* FoodSafety.sqlite in Resources */,
 				85229DFD10A2269C00F7FEA1 /* Avocados.png in Resources */,
 				85229DFE10A2269C00F7FEA1 /* Berriesstrawberriesarelistedseparately.png in Resources */,
 				85229DFF10A2269C00F7FEA1 /* CoconutsFresh.png in Resources */,
@@ -520,14 +531,15 @@
 				85229E5110A23A0D00F7FEA1 /* Rutabagas.png in Resources */,
 				85229E5210A23A0D00F7FEA1 /* SpinachLeaf.png in Resources */,
 				85229E5310A23A0D00F7FEA1 /* SquashSummer.png in Resources */,
+				D41328DB1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-57.png in Resources */,
 				85229E5410A23A0D00F7FEA1 /* SquashWinter.png in Resources */,
 				85229E5510A23A0D00F7FEA1 /* Tomatoes.png in Resources */,
 				85229E5610A23A0D00F7FEA1 /* Turnips.png in Resources */,
 				85229E6510A23C2D00F7FEA1 /* LettuceLeafincludesseveralvarieties.png in Resources */,
 				85229E6610A23C2D00F7FEA1 /* LettucePackagedPre-WashedandCut.png in Resources */,
+				D41328DF1AF169F200EACEEC /* Images.xcassets in Resources */,
 				85229E6710A23C2D00F7FEA1 /* OnionsDryyellowwhiteandred.png in Resources */,
 				85229E6810A23C2D00F7FEA1 /* PotatoesSweet.png in Resources */,
-				8508BC521129C8D100A89EBC /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +566,8 @@
 			baseConfigurationReference = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				COPY_PHASE_STRIP = NO;
@@ -571,6 +585,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				COPY_PHASE_STRIP = YES;
@@ -600,6 +616,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				COPY_PHASE_STRIP = YES;

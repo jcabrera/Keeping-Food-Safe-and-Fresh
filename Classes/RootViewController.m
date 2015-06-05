@@ -69,6 +69,7 @@
 				 */
 				
 		sqlite3_finalize(statement);
+        
 	}
 	
 	
@@ -87,6 +88,7 @@
     [super viewDidAppear:animated];
 }
 */
+
 /*
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
@@ -266,6 +268,22 @@
 	NSString *key = [keys objectAtIndex:(NSUInteger)section];
 	return key;
 	
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
+{
+    
+    if(section == 0)
+    {return 30;} else {
+        return 25;}
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == ((NSInteger)dictionary.count-1)) {
+        return 17;} else {
+            return 5;
+        };
 }
 
 @end

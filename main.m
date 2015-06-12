@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Keeping_Food_Safe_and_FreshAppDelegate.h"
 
 
 int main(int argc, char *argv[]) {
     
     @autoreleasepool {
-        int retVal = UIApplicationMain(argc, argv, nil, nil);
-        return retVal;
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Keeping_Food_Safe_and_FreshAppDelegate class]));
     }
 }

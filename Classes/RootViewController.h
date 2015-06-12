@@ -16,4 +16,5 @@
 }
 @property (nonatomic, strong) NSMutableArray *keys; 
 @property (nonatomic, strong) NSMutableDictionary *dictionary;
+@property (nonatomic, strong) NSString *template;
 @end

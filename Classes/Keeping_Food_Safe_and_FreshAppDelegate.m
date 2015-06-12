@@ -8,20 +8,21 @@
 
 #import "Keeping_Food_Safe_and_FreshAppDelegate.h"
 #import "RootViewController.h"
+#import "CategoryViewController.h"
 
 
 @implementation Keeping_Food_Safe_and_FreshAppDelegate
 
-@synthesize window;
-@synthesize navigationController;
+/*@synthesize window;
+@synthesize navigationController;*/
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
 	// Configure and show the window
-    [self.window setRootViewController:navigationController];
+    /*[self.window setRootViewController:navigationController];
 	[window makeKeyAndVisible];
-    self.window.frame = [[UIScreen mainScreen] bounds];
+    self.window.frame = [[UIScreen mainScreen] bounds];*/
 }
 
 

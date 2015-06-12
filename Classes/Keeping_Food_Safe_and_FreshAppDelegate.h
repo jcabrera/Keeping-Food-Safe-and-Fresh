@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 
-@interface Keeping_Food_Safe_and_FreshAppDelegate : NSObject <UIApplicationDelegate> {
+@interface Keeping_Food_Safe_and_FreshAppDelegate : NSObject <UIApplicationDelegate> /*{
     
     UIWindow *window;
     UINavigationController *navigationController;
-}
-
+}*/
+@property (strong, nonatomic) UIWindow *window;
 +(sqlite3 *) getNewDBConnection;
-@property (nonatomic, strong) IBOutlet UIWindow *window;
-@property (nonatomic, strong) IBOutlet UINavigationController *navigationController;
+/*@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet UINavigationController *navigationController;*/
 
 @end
 

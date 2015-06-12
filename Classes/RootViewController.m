@@ -10,6 +10,12 @@
 #import "Keeping_Food_Safe_and_FreshAppDelegate.h"
 #import "Level2Controller.h"
 
+@interface RootViewController ()
+
+@property (nonatomic, strong) NSMutableArray *listOfItems;
+
+@end
+
 
 @implementation RootViewController
 
@@ -33,19 +39,21 @@
 	
 	//Set the title
 //	self.navigationItem.title = @"Keeping Food Safe and Fresh";
-	self.navigationItem.title = @"Food Storage and Shelf Life";
+    self.navigationItem.title = self.template;
 
-	
-	self.keys = [[NSMutableArray alloc]init];
-	self.dictionary = [[NSMutableDictionary alloc]init];
+    self.listOfItems = [[NSMutableArray alloc]init];
+	//self.keys = [[NSMutableArray alloc]init];
+	//self.dictionary = [[NSMutableDictionary alloc]init];
 
 	sqlite3 *db = [Keeping_Food_Safe_and_FreshAppDelegate getNewDBConnection];
 
-	for(char c='A';c<='Z';c++)
-	{
+	//for(char c='A';c<='Z';c++)
+	//{
 		NSMutableString *query;
-		query = [NSMutableString stringWithFormat:@"select distinct category from detail where category LIKE '%c",c]; 
-		[query appendString:@"%' order by category"];
+		//query = [NSMutableString stringWithFormat:@"select distinct category from detail where category LIKE '%c",c];
+		
+        query = [NSMutableString stringWithFormat:@"select distinct category from detail where template LIKE '%@",self.template];
+        [query appendString:@"%' order by category"];
 		//char *sql = [query cString];
 		sqlite3_stmt *statement = nil;
 		
@@ -53,22 +61,23 @@
 			NSAssert1(0,@"error preparing statement",sqlite3_errmsg(db));
 		else
 		{
-			NSMutableArray *arrayOfNames = [[NSMutableArray alloc]init];
+			//NSMutableArray *arrayOfNames = [[NSMutableArray alloc]init];
 			while(sqlite3_step(statement)==SQLITE_ROW)
-				[arrayOfNames addObject:[NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]];
-			if([arrayOfNames count] >0)
+				[self.listOfItems addObject:[NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]];
+/*			if([arrayOfNames count] >0)
 			{
 				[self.keys addObject:[NSString stringWithFormat:@"%c",c]];
 				[self.dictionary setObject:arrayOfNames forKey:[NSString stringWithFormat:@"%c",c]];
 			}
 		}
 		
-				/*
+ 
 				 int row = sqlite3_column_int(statement, 0);
 				 NSString *title = [[NSString alloc] initWithUTF8String:(char *)sqlite3_column_text(statement, 1)];
 				 */
 				
 		sqlite3_finalize(statement);
+           
         
 	}
 	
@@ -101,13 +110,13 @@
 */
 
 
-// Override to allow orientations other than the default portrait orientation.
+/* Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotate:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
 //    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 	return YES;
 }
-
+*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
@@ -117,8 +126,8 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return 1;
-	return (NSInteger)[dictionary count];
+    return 1;
+	//return (NSInteger)[dictionary count];
 }
 
 
@@ -126,10 +135,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // return 0;	
 
-	NSString *key = [keys objectAtIndex:(NSUInteger)section];
-	NSArray *nameSection = [dictionary objectForKey:key];
+	//NSString *key = [keys objectAtIndex:(NSUInteger)section];
+	//NSArray *nameSection = [dictionary objectForKey:key];
 	
-	return (NSInteger)[nameSection count];
+	return (NSInteger)[self.listOfItems count];
 }
 
 
@@ -149,7 +158,9 @@
 	
 	// Set up the cell
 //	cell.text = [[dictionary objectForKey:[keys objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-	[[cell textLabel] setText:[[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row]];
+    NSString *cellValue = [self.listOfItems objectAtIndex:(NSUInteger)indexPath.row];
+    [[cell textLabel] setText:cellValue];
+	//[[cell textLabel] setText:[[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row]];
 
 /*	
 	UILabel* label = [[UILabel alloc] initWithFrame:cell.frame];
@@ -170,7 +181,8 @@
 	// [self.navigationController pushViewController:anotherViewController];
 	// [anotherViewController release];
 	
-	NSString *selectedCategory = [[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row];
+	//NSString *selectedCategory = [[dictionary objectForKey:[keys objectAtIndex:(NSUInteger)indexPath.section]] objectAtIndex:(NSUInteger)indexPath.row];
+    NSString *selectedCategory = [self.listOfItems objectAtIndex:(NSUInteger)indexPath.row];
 
 	Level2Controller *level2Controller = [[Level2Controller alloc] initWithNibName:@"Level2Controller" bundle:[NSBundle mainBundle]];
     
@@ -244,7 +256,7 @@
 	//return keys;
 	return nil;
 }
-
+/*
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
 	//NSLog(@"sectionForSectionIndexTitle title: %@",title);
 	
@@ -261,29 +273,32 @@
 	return 0;// in case of some eror donot crash d application
 
 }
+ */
 
-
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	
 	NSString *key = [keys objectAtIndex:(NSUInteger)section];
 	return key;
 	
 }
+ */
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    
-    if(section == 0)
+    return 0;
+    /*if(section == 0)
     {return 30;} else {
-        return 25;}
+        return 25;}*/
 }
 
 -(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
 {
-    if (section == ((NSInteger)dictionary.count-1)) {
+    /*if (section == ((NSInteger)dictionary.count-1)) {
         return 17;} else {
             return 5;
-        };
+        };*/
+    return 0;
 }
 
 @end

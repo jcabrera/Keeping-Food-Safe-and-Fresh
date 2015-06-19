@@ -3,6 +3,7 @@
 //  Keeping Food Safe and Fresh
 //
 //  Created by JENNIFER CRAWFORD on 7/30/09.
+//  Edited by Jennifer Cabrera in 6/2015.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
@@ -11,6 +12,7 @@
 
 @interface Level2Controller : UITableViewController
 
-- (void)prepareLevel2ControllerWith:(NSString *)category;
+@property (nonatomic, strong) NSString *selectedCategory;
+
 
 @end

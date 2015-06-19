@@ -3,6 +3,7 @@
 //  Keeping Food Safe and Fresh
 //
 //  Created by JENNIFER CRAWFORD on 7/27/09.
+//  Edited by Jennifer Cabrera in 6/2015
 //  Copyright __MyCompanyName__ 2009. All rights reserved.
 //
 
@@ -13,16 +14,10 @@
 
 @implementation Keeping_Food_Safe_and_FreshAppDelegate
 
-/*@synthesize window;
-@synthesize navigationController;*/
-
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
-	// Configure and show the window
-    /*[self.window setRootViewController:navigationController];
-	[window makeKeyAndVisible];
-    self.window.frame = [[UIScreen mainScreen] bounds];*/
+	
 }
 
 
@@ -57,11 +52,11 @@
 		NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
 	
 	
-	NSLog(@"Database path: %@",dbPath);
+	//NSLog(@"Database path: %@",dbPath);
 	// Open the database. The database was prepared outside the application.
 	if (sqlite3_open([dbPath UTF8String], &newDBconnection) == SQLITE_OK) {
 		
-		NSLog(@"Database Successfully Opened :)");
+		//NSLog(@"Database Successfully Opened :)");
 		
 	} else {
 		NSLog(@"Error in opening database :(");

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>88A92552-AB89-4BE4-9A34-D56EAF01637B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Keeping Food Safe and Fresh</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A12705F32983B2726469A6FE153174723260339B</key>
 		<string>https://github.com/jcabrera/Keeping-Food-Safe-and-Fresh.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Keeping Food Safe and Fresh.xcodeproj/project.xcworkspace</string>
+	<string>Keeping Food Safe and Fresh.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A12705F32983B2726469A6FE153174723260339B</key>

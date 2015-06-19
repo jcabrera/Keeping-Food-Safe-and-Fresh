@@ -8,12 +8,15 @@
 
 #import "CategoryViewController.h"
 #import "Keeping_Food_Safe_and_FreshAppDelegate.h"
+#import "Level2Controller.h"
+
 
 @interface CategoryViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) NSMutableArray *keys;
 @property (nonatomic, strong) NSMutableDictionary *dictionary;
 @property (nonatomic, strong) NSMutableArray *categories;
+@property (nonatomic, strong) NSString *topCategoryName;
 
 @end
 
@@ -22,8 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+   
     self.navigationItem.title = @"Food Storage and Shelf Life";
     
     
@@ -38,7 +40,7 @@
         NSMutableString *query;
         query = [NSMutableString stringWithFormat:@"select distinct template from detail where template LIKE '%c",c];
         [query appendString:@"%' order by template"];
-        //char *sql = [query cString];
+       
         sqlite3_stmt *statement = nil;
         
         if(sqlite3_prepare_v2(db,[query cStringUsingEncoding:NSUTF8StringEncoding], -1, &statement, NULL)!= SQLITE_OK)
@@ -65,10 +67,6 @@
         
         
     }
-    
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
     
 
@@ -97,31 +95,60 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    // Note that all template images must be renamed with .jpg extension, and their names must match the categories exactly
+    
+    
     CategoryImageCollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"CategoryCell" forIndexPath:indexPath];
    
     
-    NSString *categoryName = self.categories[(NSUInteger)indexPath.item];
-    cell.cellLabel.text = categoryName;
-    categoryName = [categoryName stringByAppendingString:@".jpg"];
-    cell.imageView.image = [UIImage imageNamed:categoryName];
+    self.topCategoryName = self.categories[(NSUInteger)indexPath.item];
+    cell.cellLabel.text = self.topCategoryName;
+    self.topCategoryName = [self.topCategoryName stringByAppendingString:@".jpg"];
+    cell.imageView.image = [UIImage imageNamed:self.topCategoryName];
     return cell;
 }
 
 
-/*#pragma mark - UICollectionViewDelegate
+#pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-     NSString *categoryName = self.categories[(NSUInteger)indexPath.item];
+     self.topCategoryName = self.categories[(NSUInteger)indexPath.item];
+    
+    // Most templates only have one category, so this skips down to the Level2 screen for those categories
+    
+    if (([self.topCategoryName isEqualToString:@"Foods Purchased Refrigerated"]) || ([self.topCategoryName isEqualToString:@"Shelf Stable Foods"])) {
+        [self performSegueWithIdentifier:@"Root" sender:self];
+    }
+    else {
+         [self performSegueWithIdentifier:@"Level2" sender:self];
+    }
    
 }
- */
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *index = [self.collectionView indexPathForCell:sender];
-    NSString *categoryName = self.categories[(NSUInteger)index.item];
-    UINavigationController *navController = [segue destinationViewController];
-    RootViewController *nextViewController = (RootViewController *)[navController topViewController];
-    nextViewController.template = categoryName;
+    if ([segue.identifier isEqualToString: @"Root"]) {
+        
+    RootViewController *nextViewController = [segue destinationViewController];
+        nextViewController.template = self.topCategoryName;}
+    else if ([segue.identifier isEqualToString: @"Level2"]){
+        NSString *newCategory = nil;
+        //Rename category to match 2nd column of database
+        if ([self.topCategoryName isEqualToString:@"Foods Purchased Frozen"]) {
+            newCategory = @"Freezer";}
+        else if ([self.topCategoryName isEqualToString:@"Fresh Foods Fruits"]){
+            newCategory = @"Fruits";}
+        else if ([self.topCategoryName isEqualToString:@"Fresh Foods Vegetables"]){
+            newCategory = @"Vegetables";}
+        else newCategory = self.topCategoryName;
+        
+  
+    
+        Level2Controller *level2Controller = [segue destinationViewController];
+    level2Controller.selectedCategory = newCategory;
+        
+   
+    }
 
 }
 @end

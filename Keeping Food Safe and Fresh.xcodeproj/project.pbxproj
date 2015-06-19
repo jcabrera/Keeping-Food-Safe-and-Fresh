@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
-		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		8508BC521129C8D100A89EBC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8508BC511129C8D100A89EBC /* Icon.png */; };
+		7C1411461A86DE9F00EC3821 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */; };
 		851781B2102A2BE2009DE18C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */; };
 		85229DDA10A2254400F7FEA1 /* Apples.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229DC110A2254400F7FEA1 /* Apples.png */; };
 		85229DDB10A2254400F7FEA1 /* Apricots.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229DC210A2254400F7FEA1 /* Apricots.png */; };
@@ -53,7 +51,7 @@
 		85229E3810A23A0D00F7FEA1 /* Carrots.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1110A23A0D00F7FEA1 /* Carrots.png */; };
 		85229E3910A23A0D00F7FEA1 /* Cauliflower.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1210A23A0D00F7FEA1 /* Cauliflower.png */; };
 		85229E3A10A23A0D00F7FEA1 /* Celery.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1310A23A0D00F7FEA1 /* Celery.png */; };
-		85229E3B10A23A0D00F7FEA1 /* Cornonthecob.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1410A23A0D00F7FEA1 /* Cornonthecob.png */; };
+		85229E3B10A23A0D00F7FEA1 /* CornontheCob.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1410A23A0D00F7FEA1 /* CornontheCob.png */; };
 		85229E3C10A23A0D00F7FEA1 /* Cucumbers.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1510A23A0D00F7FEA1 /* Cucumbers.png */; };
 		85229E3D10A23A0D00F7FEA1 /* Eggplant.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1610A23A0D00F7FEA1 /* Eggplant.png */; };
 		85229E3E10A23A0D00F7FEA1 /* Garlic.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E1710A23A0D00F7FEA1 /* Garlic.png */; };
@@ -81,23 +79,24 @@
 		85229E6610A23C2D00F7FEA1 /* LettucePackagedPre-WashedandCut.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E6210A23C2D00F7FEA1 /* LettucePackagedPre-WashedandCut.png */; };
 		85229E6710A23C2D00F7FEA1 /* OnionsDryyellowwhiteandred.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E6310A23C2D00F7FEA1 /* OnionsDryyellowwhiteandred.png */; };
 		85229E6810A23C2D00F7FEA1 /* PotatoesSweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 85229E6410A23C2D00F7FEA1 /* PotatoesSweet.png */; };
-		8527A6BD101F9F92001CBFF9 /* ArtichokesWhole.html in Resources */ = {isa = PBXBuildFile; fileRef = 8527A6BC101F9F92001CBFF9 /* ArtichokesWhole.html */; };
-		853766F2102108FB007C138D /* NotYetImplemented.html in Resources */ = {isa = PBXBuildFile; fileRef = 853766F1102108FB007C138D /* NotYetImplemented.html */; };
-		8537672110210E19007C138D /* Apricots.html in Resources */ = {isa = PBXBuildFile; fileRef = 8537672010210E19007C138D /* Apricots.html */; };
-		8537676010210E70007C138D /* Asparagus.html in Resources */ = {isa = PBXBuildFile; fileRef = 8537675F10210E70007C138D /* Asparagus.html */; };
-		855F31D3102B572D003B6D6F /* FoodSafety.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 855F31D2102B572D003B6D6F /* FoodSafety.sqlite */; };
 		8564E5771027638D0069D9C4 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8564E5761027638D0069D9C4 /* Categories.plist */; };
 		85671F631021EF6700EADED7 /* Level2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 85671F621021EF6700EADED7 /* Level2Controller.m */; };
-		85671F6E1021F17900EADED7 /* Level2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85671F6D1021F17900EADED7 /* Level2Controller.xib */; };
-		856720581021FEB700EADED7 /* NotYetImplemented.txt in Resources */ = {isa = PBXBuildFile; fileRef = 856720571021FEB700EADED7 /* NotYetImplemented.txt */; };
-		856720711021FF5C00EADED7 /* BakingIngredients.txt in Resources */ = {isa = PBXBuildFile; fileRef = 856720701021FF5C00EADED7 /* BakingIngredients.txt */; };
-		856720861022003400EADED7 /* BabyFoodJarsOrCans.txt in Resources */ = {isa = PBXBuildFile; fileRef = 856720851022003400EADED7 /* BabyFoodJarsOrCans.txt */; };
-		85672099102200A300EADED7 /* Cerealdrymixed.html in Resources */ = {isa = PBXBuildFile; fileRef = 85672098102200A300EADED7 /* Cerealdrymixed.html */; };
-		856720BA1022053B00EADED7 /* Fruits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 856720B91022053B00EADED7 /* Fruits.txt */; };
-		856720BE1022057E00EADED7 /* Vegetables.txt in Resources */ = {isa = PBXBuildFile; fileRef = 856720BD1022057E00EADED7 /* Vegetables.txt */; };
-		8567B41B1020F15600119B18 /* Apples.html in Resources */ = {isa = PBXBuildFile; fileRef = 8567B41A1020F15600119B18 /* Apples.html */; };
 		85C826DF101F6F57002507DA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C826DE101F6F57002507DA /* DetailViewController.m */; };
 		85CCC5F9101F7B6D0099973D /* DetailView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CCC5F8101F7B6D0099973D /* DetailView1.xib */; };
+		D41328DD1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png in Resources */ = {isa = PBXBuildFile; fileRef = D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */; };
+		D41328DF1AF169F200EACEEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41328DE1AF169F200EACEEC /* Images.xcassets */; };
+		D4D9AA7A1B02BCEB005E87D8 /* FoodSafety.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */; };
+		D4E64F3E1B22359D0073A796 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F3D1B22359D0073A796 /* MainStoryboard.storyboard */; };
+		D4E64F411B2236910073A796 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64F401B2236910073A796 /* CategoryViewController.m */; };
+		D4E64F441B28B9D60073A796 /* CategoryImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E64F431B28B9D60073A796 /* CategoryImageCollectionViewCell.m */; };
+		D4E64F4D1B28C13F0073A796 /* Foods Purchased Frozen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F451B28C13F0073A796 /* Foods Purchased Frozen.jpg */; };
+		D4E64F4F1B28C13F0073A796 /* Shelf Stable Foods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F471B28C13F0073A796 /* Shelf Stable Foods.jpg */; };
+		D4E64F501B28C13F0073A796 /* Fruits and Vegetables Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F481B28C13F0073A796 /* Fruits and Vegetables Photo.jpg */; };
+		D4E64F511B28C13F0073A796 /* Bakery Items.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F491B28C13F0073A796 /* Bakery Items.jpg */; };
+		D4E64F521B28C13F0073A796 /* Fresh Foods Fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F4A1B28C13F0073A796 /* Fresh Foods Fruits.jpg */; };
+		D4E64F531B28C13F0073A796 /* Fresh Foods Vegetables.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F4B1B28C13F0073A796 /* Fresh Foods Vegetables.jpg */; };
+		D4E64F541B28C13F0073A796 /* Dry Goods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F4C1B28C13F0073A796 /* Dry Goods.jpg */; };
+		D4E64F561B2A26E90073A796 /* Foods Purchased Refrigerated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4E64F551B2A26E90073A796 /* Foods Purchased Refrigerated.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,13 +106,12 @@
 		1D6058910D05DD3D006BFB54 /* Keeping Food Safe and Fresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keeping Food Safe and Fresh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		28A0AAE50D9B0CCF005BE974 /* Keeping_Food_Safe_and_Fresh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keeping_Food_Safe_and_Fresh_Prefix.pch; sourceTree = "<group>"; };
-		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8508BC511129C8D100A89EBC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7C1411471A86E2A200EC3821 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		851781B1102A2BE2009DE18C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		85229DC110A2254400F7FEA1 /* Apples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apples.png; path = png/Apples.png; sourceTree = "<group>"; };
 		85229DC210A2254400F7FEA1 /* Apricots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apricots.png; path = png/Apricots.png; sourceTree = "<group>"; };
@@ -151,7 +149,7 @@
 		85229E1110A23A0D00F7FEA1 /* Carrots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Carrots.png; path = png/Carrots.png; sourceTree = "<group>"; };
 		85229E1210A23A0D00F7FEA1 /* Cauliflower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cauliflower.png; path = png/Cauliflower.png; sourceTree = "<group>"; };
 		85229E1310A23A0D00F7FEA1 /* Celery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Celery.png; path = png/Celery.png; sourceTree = "<group>"; };
-		85229E1410A23A0D00F7FEA1 /* Cornonthecob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cornonthecob.png; path = png/Cornonthecob.png; sourceTree = "<group>"; };
+		85229E1410A23A0D00F7FEA1 /* CornontheCob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CornontheCob.png; path = png/CornontheCob.png; sourceTree = "<group>"; };
 		85229E1510A23A0D00F7FEA1 /* Cucumbers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cucumbers.png; path = png/Cucumbers.png; sourceTree = "<group>"; };
 		85229E1610A23A0D00F7FEA1 /* Eggplant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Eggplant.png; path = png/Eggplant.png; sourceTree = "<group>"; };
 		85229E1710A23A0D00F7FEA1 /* Garlic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Garlic.png; path = png/Garlic.png; sourceTree = "<group>"; };
@@ -179,26 +177,29 @@
 		85229E6210A23C2D00F7FEA1 /* LettucePackagedPre-WashedandCut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LettucePackagedPre-WashedandCut.png"; path = "png/LettucePackagedPre-WashedandCut.png"; sourceTree = "<group>"; };
 		85229E6310A23C2D00F7FEA1 /* OnionsDryyellowwhiteandred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OnionsDryyellowwhiteandred.png; path = png/OnionsDryyellowwhiteandred.png; sourceTree = "<group>"; };
 		85229E6410A23C2D00F7FEA1 /* PotatoesSweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PotatoesSweet.png; path = png/PotatoesSweet.png; sourceTree = "<group>"; };
-		8527A6BC101F9F92001CBFF9 /* ArtichokesWhole.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ArtichokesWhole.html; sourceTree = "<group>"; };
-		853766F1102108FB007C138D /* NotYetImplemented.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NotYetImplemented.html; sourceTree = "<group>"; };
-		8537672010210E19007C138D /* Apricots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Apricots.html; sourceTree = "<group>"; };
-		8537675F10210E70007C138D /* Asparagus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Asparagus.html; sourceTree = "<group>"; };
-		855F31D2102B572D003B6D6F /* FoodSafety.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FoodSafety.sqlite; sourceTree = "<group>"; };
 		8564E5761027638D0069D9C4 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
 		85671F611021EF6700EADED7 /* Level2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2Controller.h; sourceTree = "<group>"; };
 		85671F621021EF6700EADED7 /* Level2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2Controller.m; sourceTree = "<group>"; };
-		85671F6D1021F17900EADED7 /* Level2Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Level2Controller.xib; sourceTree = "<group>"; };
-		856720571021FEB700EADED7 /* NotYetImplemented.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotYetImplemented.txt; sourceTree = "<group>"; };
-		856720701021FF5C00EADED7 /* BakingIngredients.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BakingIngredients.txt; sourceTree = "<group>"; };
-		856720851022003400EADED7 /* BabyFoodJarsOrCans.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BabyFoodJarsOrCans.txt; sourceTree = "<group>"; };
-		85672098102200A300EADED7 /* Cerealdrymixed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Cerealdrymixed.html; sourceTree = "<group>"; };
-		856720B91022053B00EADED7 /* Fruits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fruits.txt; sourceTree = "<group>"; };
-		856720BD1022057E00EADED7 /* Vegetables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vegetables.txt; sourceTree = "<group>"; };
-		8567B41A1020F15600119B18 /* Apples.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Apples.html; sourceTree = "<group>"; };
 		85C826DD101F6F57002507DA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		85C826DE101F6F57002507DA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		85CCC5F8101F7B6D0099973D /* DetailView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView1.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FOOD STORAGE LOGO_V7_042915-LG-1500.png"; sourceTree = "<group>"; };
+		D41328DE1AF169F200EACEEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Keeping Food Safe and Fresh/Images.xcassets"; sourceTree = "<group>"; };
+		D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FoodSafety.sqlite; sourceTree = "<group>"; };
+		D4E64F3D1B22359D0073A796 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D4E64F3F1B2236910073A796 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		D4E64F401B2236910073A796 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		D4E64F421B28B9D60073A796 /* CategoryImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryImageCollectionViewCell.h; sourceTree = "<group>"; };
+		D4E64F431B28B9D60073A796 /* CategoryImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryImageCollectionViewCell.m; sourceTree = "<group>"; };
+		D4E64F451B28C13F0073A796 /* Foods Purchased Frozen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Foods Purchased Frozen.jpg"; sourceTree = "<group>"; };
+		D4E64F471B28C13F0073A796 /* Shelf Stable Foods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shelf Stable Foods.jpg"; sourceTree = "<group>"; };
+		D4E64F481B28C13F0073A796 /* Fruits and Vegetables Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fruits and Vegetables Photo.jpg"; sourceTree = "<group>"; };
+		D4E64F491B28C13F0073A796 /* Bakery Items.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bakery Items.jpg"; sourceTree = "<group>"; };
+		D4E64F4A1B28C13F0073A796 /* Fresh Foods Fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fresh Foods Fruits.jpg"; sourceTree = "<group>"; };
+		D4E64F4B1B28C13F0073A796 /* Fresh Foods Vegetables.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fresh Foods Vegetables.jpg"; sourceTree = "<group>"; };
+		D4E64F4C1B28C13F0073A796 /* Dry Goods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dry Goods.jpg"; sourceTree = "<group>"; };
+		D4E64F551B2A26E90073A796 /* Foods Purchased Refrigerated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Foods Purchased Refrigerated.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +220,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4E64F3F1B2236910073A796 /* CategoryViewController.h */,
+				D4E64F401B2236910073A796 /* CategoryViewController.m */,
+				D4E64F421B28B9D60073A796 /* CategoryImageCollectionViewCell.h */,
+				D4E64F431B28B9D60073A796 /* CategoryImageCollectionViewCell.m */,
 				1D3623240D0F684500981E51 /* Keeping_Food_Safe_and_FreshAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Keeping_Food_Safe_and_FreshAppDelegate.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
@@ -242,6 +247,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7C1411471A86E2A200EC3821 /* Warnings.xcconfig */,
+				7C1411451A86DE9F00EC3821 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -263,17 +270,22 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8508BC511129C8D100A89EBC /* Icon.png */,
-				855F31D2102B572D003B6D6F /* FoodSafety.sqlite */,
-				8564E49810273BE40069D9C4 /* html */,
-				8564E49510273BB10069D9C4 /* txt */,
+				D4E64F551B2A26E90073A796 /* Foods Purchased Refrigerated.jpg */,
+				D4E64F451B28C13F0073A796 /* Foods Purchased Frozen.jpg */,
+				D4E64F471B28C13F0073A796 /* Shelf Stable Foods.jpg */,
+				D4E64F481B28C13F0073A796 /* Fruits and Vegetables Photo.jpg */,
+				D4E64F491B28C13F0073A796 /* Bakery Items.jpg */,
+				D4E64F4A1B28C13F0073A796 /* Fresh Foods Fruits.jpg */,
+				D4E64F4B1B28C13F0073A796 /* Fresh Foods Vegetables.jpg */,
+				D4E64F4C1B28C13F0073A796 /* Dry Goods.jpg */,
+				D4D9AA791B02BCEB005E87D8 /* FoodSafety.sqlite */,
+				D41328DE1AF169F200EACEEC /* Images.xcassets */,
+				D41328DA1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png */,
 				8564E48010273B790069D9C4 /* png */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
-				85671F6D1021F17900EADED7 /* Level2Controller.xib */,
 				85CCC5F8101F7B6D0099973D /* DetailView1.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				8564E5761027638D0069D9C4 /* Categories.plist */,
+				D4E64F3D1B22359D0073A796 /* MainStoryboard.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -307,7 +319,7 @@
 				85229E1110A23A0D00F7FEA1 /* Carrots.png */,
 				85229E1210A23A0D00F7FEA1 /* Cauliflower.png */,
 				85229E1310A23A0D00F7FEA1 /* Celery.png */,
-				85229E1410A23A0D00F7FEA1 /* Cornonthecob.png */,
+				85229E1410A23A0D00F7FEA1 /* CornontheCob.png */,
 				85229E1510A23A0D00F7FEA1 /* Cucumbers.png */,
 				85229E1610A23A0D00F7FEA1 /* Eggplant.png */,
 				85229E1710A23A0D00F7FEA1 /* Garlic.png */,
@@ -360,31 +372,6 @@
 			name = png;
 			sourceTree = "<group>";
 		};
-		8564E49510273BB10069D9C4 /* txt */ = {
-			isa = PBXGroup;
-			children = (
-				856720571021FEB700EADED7 /* NotYetImplemented.txt */,
-				856720B91022053B00EADED7 /* Fruits.txt */,
-				856720851022003400EADED7 /* BabyFoodJarsOrCans.txt */,
-				856720BD1022057E00EADED7 /* Vegetables.txt */,
-				856720701021FF5C00EADED7 /* BakingIngredients.txt */,
-			);
-			name = txt;
-			sourceTree = "<group>";
-		};
-		8564E49810273BE40069D9C4 /* html */ = {
-			isa = PBXGroup;
-			children = (
-				85672098102200A300EADED7 /* Cerealdrymixed.html */,
-				853766F1102108FB007C138D /* NotYetImplemented.html */,
-				8567B41A1020F15600119B18 /* Apples.html */,
-				8537672010210E19007C138D /* Apricots.html */,
-				8527A6BC101F9F92001CBFF9 /* ArtichokesWhole.html */,
-				8537675F10210E70007C138D /* Asparagus.html */,
-			);
-			name = html;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,8 +397,16 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = DNFGAL2XGS;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Keeping Food Safe and Fresh" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -435,23 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
 				85CCC5F9101F7B6D0099973D /* DetailView1.xib in Resources */,
-				8527A6BD101F9F92001CBFF9 /* ArtichokesWhole.html in Resources */,
-				8567B41B1020F15600119B18 /* Apples.html in Resources */,
-				853766F2102108FB007C138D /* NotYetImplemented.html in Resources */,
-				8537672110210E19007C138D /* Apricots.html in Resources */,
-				8537676010210E70007C138D /* Asparagus.html in Resources */,
-				85671F6E1021F17900EADED7 /* Level2Controller.xib in Resources */,
-				856720581021FEB700EADED7 /* NotYetImplemented.txt in Resources */,
-				856720711021FF5C00EADED7 /* BakingIngredients.txt in Resources */,
-				856720861022003400EADED7 /* BabyFoodJarsOrCans.txt in Resources */,
-				85672099102200A300EADED7 /* Cerealdrymixed.html in Resources */,
-				856720BA1022053B00EADED7 /* Fruits.txt in Resources */,
-				856720BE1022057E00EADED7 /* Vegetables.txt in Resources */,
+				D4E64F561B2A26E90073A796 /* Foods Purchased Refrigerated.jpg in Resources */,
+				7C1411461A86DE9F00EC3821 /* Default-568h@2x.png in Resources */,
+				D4E64F4F1B28C13F0073A796 /* Shelf Stable Foods.jpg in Resources */,
+				D41328DD1AF169AE00EACEEC /* FOOD STORAGE LOGO_V7_042915-LG-1500.png in Resources */,
 				8564E5771027638D0069D9C4 /* Categories.plist in Resources */,
-				855F31D3102B572D003B6D6F /* FoodSafety.sqlite in Resources */,
 				85229DDA10A2254400F7FEA1 /* Apples.png in Resources */,
 				85229DDB10A2254400F7FEA1 /* Apricots.png in Resources */,
 				85229DDD10A2254400F7FEA1 /* Bananas.png in Resources */,
@@ -463,6 +447,7 @@
 				85229DE710A2254400F7FEA1 /* Limes.png in Resources */,
 				85229DE810A2254400F7FEA1 /* Mango.png in Resources */,
 				85229DE910A2254400F7FEA1 /* Nectarines.png in Resources */,
+				D4E64F541B28C13F0073A796 /* Dry Goods.jpg in Resources */,
 				85229DEA10A2254400F7FEA1 /* Oranges.png in Resources */,
 				85229DEB10A2254400F7FEA1 /* Papaya.png in Resources */,
 				85229DEC10A2254400F7FEA1 /* Peaches.png in Resources */,
@@ -472,12 +457,14 @@
 				85229DF010A2254400F7FEA1 /* Strawberries.png in Resources */,
 				85229DF110A2254400F7FEA1 /* Tangerines.png in Resources */,
 				85229DF210A2254400F7FEA1 /* Watermelon.png in Resources */,
+				D4D9AA7A1B02BCEB005E87D8 /* FoodSafety.sqlite in Resources */,
 				85229DFD10A2269C00F7FEA1 /* Avocados.png in Resources */,
 				85229DFE10A2269C00F7FEA1 /* Berriesstrawberriesarelistedseparately.png in Resources */,
 				85229DFF10A2269C00F7FEA1 /* CoconutsFresh.png in Resources */,
 				85229E0010A2269C00F7FEA1 /* Grapefruit.png in Resources */,
 				85229E0110A2269C00F7FEA1 /* HoneydewMelon.png in Resources */,
 				85229E3010A23A0D00F7FEA1 /* ArtichokesWhole.png in Resources */,
+				D4E64F4D1B28C13F0073A796 /* Foods Purchased Frozen.jpg in Resources */,
 				85229E3110A23A0D00F7FEA1 /* Asparagus.png in Resources */,
 				85229E3210A23A0D00F7FEA1 /* BeansGreenSnapWax.png in Resources */,
 				85229E3310A23A0D00F7FEA1 /* Beets.png in Resources */,
@@ -485,15 +472,19 @@
 				85229E3510A23A0D00F7FEA1 /* Broccoli.png in Resources */,
 				85229E3610A23A0D00F7FEA1 /* BrusselsSprouts.png in Resources */,
 				85229E3710A23A0D00F7FEA1 /* CabbageGreenRed.png in Resources */,
+				D4E64F531B28C13F0073A796 /* Fresh Foods Vegetables.jpg in Resources */,
 				85229E3810A23A0D00F7FEA1 /* Carrots.png in Resources */,
 				85229E3910A23A0D00F7FEA1 /* Cauliflower.png in Resources */,
 				85229E3A10A23A0D00F7FEA1 /* Celery.png in Resources */,
-				85229E3B10A23A0D00F7FEA1 /* Cornonthecob.png in Resources */,
+				85229E3B10A23A0D00F7FEA1 /* CornontheCob.png in Resources */,
 				85229E3C10A23A0D00F7FEA1 /* Cucumbers.png in Resources */,
 				85229E3D10A23A0D00F7FEA1 /* Eggplant.png in Resources */,
 				85229E3E10A23A0D00F7FEA1 /* Garlic.png in Resources */,
+				D4E64F511B28C13F0073A796 /* Bakery Items.jpg in Resources */,
+				D4E64F3E1B22359D0073A796 /* MainStoryboard.storyboard in Resources */,
 				85229E3F10A23A0D00F7FEA1 /* GingerRoot.png in Resources */,
 				85229E4010A23A0D00F7FEA1 /* GreensLeafy.png in Resources */,
+				D4E64F521B28C13F0073A796 /* Fresh Foods Fruits.jpg in Resources */,
 				85229E4110A23A0D00F7FEA1 /* HerbsFresh.png in Resources */,
 				85229E4210A23A0D00F7FEA1 /* Leeks.png in Resources */,
 				85229E4310A23A0D00F7FEA1 /* LettuceIceberg.png in Resources */,
@@ -504,6 +495,7 @@
 				85229E4B10A23A0D00F7FEA1 /* Parsley.png in Resources */,
 				85229E4C10A23A0D00F7FEA1 /* Parsnips.png in Resources */,
 				85229E4D10A23A0D00F7FEA1 /* PeppersBellChili.png in Resources */,
+				D4E64F501B28C13F0073A796 /* Fruits and Vegetables Photo.jpg in Resources */,
 				85229E4E10A23A0D00F7FEA1 /* Potatoes.png in Resources */,
 				85229E5010A23A0D00F7FEA1 /* Radishes.png in Resources */,
 				85229E5110A23A0D00F7FEA1 /* Rutabagas.png in Resources */,
@@ -514,9 +506,9 @@
 				85229E5610A23A0D00F7FEA1 /* Turnips.png in Resources */,
 				85229E6510A23C2D00F7FEA1 /* LettuceLeafincludesseveralvarieties.png in Resources */,
 				85229E6610A23C2D00F7FEA1 /* LettucePackagedPre-WashedandCut.png in Resources */,
+				D41328DF1AF169F200EACEEC /* Images.xcassets in Resources */,
 				85229E6710A23C2D00F7FEA1 /* OnionsDryyellowwhiteandred.png in Resources */,
 				85229E6810A23C2D00F7FEA1 /* PotatoesSweet.png in Resources */,
-				8508BC521129C8D100A89EBC /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +523,8 @@
 				1D3623260D0F684500981E51 /* Keeping_Food_Safe_and_FreshAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				85C826DF101F6F57002507DA /* DetailViewController.m in Sources */,
+				D4E64F411B2236910073A796 /* CategoryViewController.m in Sources */,
+				D4E64F441B28B9D60073A796 /* CategoryImageCollectionViewCell.m in Sources */,
 				85671F631021EF6700EADED7 /* Level2Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,8 +534,14 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -549,6 +549,7 @@
 				GCC_PREFIX_HEADER = Keeping_Food_Safe_and_Fresh_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = "Keeping Food Safe and Fresh";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
 		};
@@ -556,25 +557,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Keeping_Food_Safe_and_Fresh_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = "Keeping Food Safe and Fresh";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Release;
 		};
 		8508BC5A1129C9E500A89EBC /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JacobDavis Productions";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1C256CA-E738-4A11-B2FD-D1B156D819D2";
-				SDKROOT = iphoneos4.2;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution;
 		};
@@ -582,38 +589,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Keeping_Food_Safe_and_Fresh_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = "Keeping Food Safe and Fresh";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Distribution;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1411471A86E2A200EC3821 /* Warnings.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.2;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.2;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

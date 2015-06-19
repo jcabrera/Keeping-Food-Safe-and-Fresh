@@ -9,17 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface DetailViewController : UIViewController {
-	IBOutlet UIWebView *webView;
-	NSString *selectedCategory;
-	NSString *selectedProduce;
+@interface DetailViewController : UIViewController
 
-
-	
-}
-
-@property (nonatomic, retain) NSString *selectedProduce;
-@property (nonatomic, retain) NSString *selectedCategory;
+- (void)prepareDetailViewControllerProduce:(NSString *)produce category:(NSString *)category;
 
 @end
 
